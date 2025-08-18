@@ -78,27 +78,31 @@ const PortfolioSection = () => {
             {filteredPortfolio.map((project, index) => (
               <div 
                 key={project.id}
-                className="group bg-black bg-opacity-40 border border-gray-800 overflow-hidden transition-all duration-500 hover:border-purple-500 hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2"
+                className={`animated-card hover-lift animate-scale-in animate-delay-${(index + 1) * 100} group cursor-pointer`}
                 style={{
-                  animationDelay: `${index * 0.1}s`
+                  animationDelay: `${index * 0.15}s`
                 }}
               >
-                {/* Project Image with subtle gradient */}
-                <div className="relative overflow-hidden h-48 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-purple-800/10"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="heading-3 text-white mb-2">{project.category}</div>
-                      <div className="body-small text-gray-300">Aperçu professionnel</div>
+                {/* Project Image with enhanced gradient */}
+                <div className="relative overflow-hidden h-48 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 rounded-t-lg">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-transparent to-purple-800/5"></div>
+                  <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <div className="text-center animate-float">
+                      <div className="heading-3 text-white mb-2 group-hover:text-purple-300 transition-colors">
+                        {project.category}
+                      </div>
+                      <div className="body-small text-gray-300 group-hover:text-purple-200 transition-colors">
+                        Aperçu professionnel
+                      </div>
                     </div>
                   </div>
                   
                   {/* Enhanced hover overlay */}
-                  <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-4">
-                    <button className="p-4 bg-purple-600 hover:bg-purple-700 transition-all duration-300 hover:scale-110">
+                  <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center gap-6">
+                    <button className="p-4 bg-purple-600 hover:bg-purple-700 transition-all duration-300 hover-scale rounded-lg animate-bounce">
                       <ExternalLink size={20} className="text-white" />
                     </button>
-                    <button className="p-4 bg-gray-700 hover:bg-gray-600 transition-all duration-300 hover:scale-110">
+                    <button className="p-4 bg-gray-700 hover:bg-gray-600 transition-all duration-300 hover-scale rounded-lg animate-bounce animate-delay-100">
                       <Github size={20} className="text-white" />
                     </button>
                   </div>
@@ -107,15 +111,17 @@ const PortfolioSection = () => {
                 {/* Project Content */}
                 <div className="p-6">
                   {/* Category Badge */}
-                  <div className="inline-block px-3 py-1 bg-purple-900 bg-opacity-30 text-purple-300 text-sm mb-4 border border-purple-800">
+                  <div className="inline-block px-3 py-1 bg-purple-900 bg-opacity-30 text-purple-300 text-sm mb-4 border border-purple-800 rounded-full hover-glow transition-all duration-300">
                     {project.category}
                   </div>
 
                   {/* Project Title */}
-                  <h3 className="heading-3 mb-3 group-hover:text-purple-300 transition-colors">{project.title}</h3>
+                  <h3 className="heading-3 mb-3 group-hover:text-purple-300 transition-colors duration-300">
+                    {project.title}
+                  </h3>
 
                   {/* Project Description */}
-                  <p className="body-small text-gray-300 mb-4 line-clamp-3">
+                  <p className="body-small text-gray-300 mb-4 line-clamp-3 group-hover:text-gray-200 transition-colors duration-300">
                     {project.description}
                   </p>
 
@@ -124,7 +130,7 @@ const PortfolioSection = () => {
                     {project.technologies.map((tech, idx) => (
                       <span 
                         key={idx}
-                        className="px-3 py-1 bg-gray-800 text-gray-300 text-xs border border-gray-700 hover:border-purple-600 transition-colors"
+                        className={`px-3 py-1 bg-gray-800 text-gray-300 text-xs border border-gray-700 hover:border-purple-600 transition-all duration-300 rounded-md hover-scale animate-fade-in-up animate-delay-${(idx + 1) * 50}`}
                       >
                         {tech}
                       </span>
@@ -136,18 +142,18 @@ const PortfolioSection = () => {
                     <div className="text-sm font-medium text-gray-400 mb-2">Fonctionnalités clés :</div>
                     <ul className="text-xs text-gray-400 space-y-1">
                       {project.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center gap-2">
-                          <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
-                          {feature}
+                        <li key={idx} className="flex items-center gap-2 group/feature hover:text-purple-300 transition-colors">
+                          <div className="w-1 h-1 bg-purple-400 rounded-full group-hover/feature:scale-150 transition-transform"></div>
+                          <span className="group-hover/feature:font-medium">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   {/* CTA */}
-                  <button className="btn-secondary w-full group text-sm hover:border-purple-500">
-                    Voir le projet
-                    <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                  <button className="btn-secondary w-full group/btn hover:border-purple-500">
+                    <span>Voir le projet</span>
+                    <ArrowRight size={16} className="ml-2 transition-transform group-hover/btn:translate-x-2 group-hover/btn:scale-110" />
                   </button>
                 </div>
               </div>
