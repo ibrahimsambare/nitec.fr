@@ -275,15 +275,15 @@ const ContactSection = () => {
                 <div className="space-y-2 text-gray-300">
                   <div className="flex justify-between">
                     <span className="body-small">Email :</span>
-                    <span className="body-small font-medium">< 24h</span>
+                    <span className="body-small font-medium">&lt; 24h</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="body-small">WhatsApp :</span>
-                    <span className="body-small font-medium">< 2h</span>
+                    <span className="body-small font-medium">&lt; 2h</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="body-small">Devis :</span>
-                    <span className="body-small font-medium">< 48h</span>
+                    <span className="body-small font-medium">&lt; 48h</span>
                   </div>
                 </div>
               </div>
