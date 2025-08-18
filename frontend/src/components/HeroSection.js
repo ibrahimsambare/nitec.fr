@@ -9,11 +9,23 @@ const HeroSection = ({ scrollToSection }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-64 h-64 border border-purple-800 opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-48 h-48 border border-purple-600 opacity-30 animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-32 h-32 border border-purple-400 opacity-10 animate-pulse delay-500"></div>
+      {/* Subtle tech-inspired background elements */}
+      <div className="absolute inset-0 overflow-hidden opacity-5">
+        <div className="absolute top-20 left-10 w-32 h-32 border border-purple-400"></div>
+        <div className="absolute bottom-40 right-16 w-24 h-24 border border-purple-400"></div>
+        <div className="absolute top-1/3 right-1/4 w-16 h-16 border border-purple-400"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-20 h-20 border border-purple-400"></div>
+        
+        {/* Circuit-inspired lines */}
+        <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <path d="M 0 50 L 50 50 L 50 0" stroke="#A259FF" strokeWidth="0.5" fill="none" opacity="0.1"/>
+              <path d="M 50 100 L 50 50 L 100 50" stroke="#A259FF" strokeWidth="0.5" fill="none" opacity="0.1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#circuit)"/>
+        </svg>
       </div>
 
       <div className="dark-content-container relative z-10">
