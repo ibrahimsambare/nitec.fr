@@ -9,6 +9,7 @@ const Header = ({ activeSection, scrollToSection }) => {
     { id: "accueil", label: "Accueil" },
     { id: "services", label: "Services" },
     { id: "realisations", label: "Réalisations" },
+    { id: "faq", label: "FAQ" },
     { id: "contact", label: "Contact" }
   ];
 
