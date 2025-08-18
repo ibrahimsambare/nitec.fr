@@ -8,7 +8,7 @@ const HeroSection = ({ scrollToSection }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0">
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0 mb-16 md:mb-0">
       {/* Subtle tech-inspired background elements */}
       <div className="absolute inset-0 overflow-hidden opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 border border-purple-400 animate-float"></div>
@@ -29,9 +29,9 @@ const HeroSection = ({ scrollToSection }) => {
       </div>
 
       <div className="dark-content-container relative z-10">
-        <div className="text-center max-w-4xl mx-auto px-4">
+        <div className="text-center max-w-4xl mx-auto px-4 py-8 md:py-0">
           {/* Main heading */}
-          <h1 className="display-huge mb-8 mt-8 md:mt-0 animate-slideInUp">
+          <h1 className="display-huge mb-8 mt-8 md:mt-0 animate-slideInUp px-4">
             {companyInfo.slogan}
           </h1>
           
