@@ -36,37 +36,37 @@ const HeroSection = ({ scrollToSection }) => {
           </h1>
           
           {/* Subtitle */}
-          <p className="body-large mb-12 max-w-2xl mx-auto animate-fadeInUp delay-200">
+          <p className="body-large mb-12 max-w-2xl mx-auto animate-slideInUp delay-300">
             <strong>L'Afrique mérite des solutions web d'exception.</strong> Créez une présence digitale 
             puissante pour votre entreprise, école ou institution avec nos solutions modernes, 
             performantes et parfaitement adaptées au marché africain et international.
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-8 mb-16 animate-fadeInUp delay-400">
-            <div className="text-center p-4">
-              <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.projects}</div>
+          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-8 mb-16 animate-slideInUp delay-500">
+            <div className="text-center p-4 transform hover:scale-105 transition-transform duration-300">
+              <div className="display-medium text-purple-400 mb-2 animate-counter">{companyInfo.stats.projects}</div>
               <div className="body-small">Projets réalisés</div>
             </div>
-            <div className="text-center p-4">
-              <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.clients}</div>
+            <div className="text-center p-4 transform hover:scale-105 transition-transform duration-300">
+              <div className="display-medium text-purple-400 mb-2 animate-counter delay-100">{companyInfo.stats.clients}</div>
               <div className="body-small">Clients satisfaits</div>
             </div>
-            <div className="text-center p-4">
-              <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.experience}</div>
+            <div className="text-center p-4 transform hover:scale-105 transition-transform duration-300">
+              <div className="display-medium text-purple-400 mb-2 animate-counter delay-200">{companyInfo.stats.experience}</div>
               <div className="body-small">Années d'expérience</div>
             </div>
-            <div className="text-center p-4">
-              <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.satisfaction}</div>
+            <div className="text-center p-4 transform hover:scale-105 transition-transform duration-300">
+              <div className="display-medium text-purple-400 mb-2 animate-counter delay-300">{companyInfo.stats.satisfaction}</div>
               <div className="body-small">Satisfaction client</div>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col gap-6 justify-center items-center animate-fadeInUp delay-600 max-w-md mx-auto">
+          <div className="flex flex-col gap-6 justify-center items-center animate-slideInUp delay-700 max-w-md mx-auto">
             <button 
               onClick={handleCTAClick}
-              className="btn-primary group w-full flex items-center justify-center"
+              className="btn-primary group w-full flex items-center justify-center transform hover:scale-105 transition-all duration-300"
             >
               <span>Demander un devis gratuit</span>
               <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
@@ -74,7 +74,7 @@ const HeroSection = ({ scrollToSection }) => {
             
             <button 
               onClick={() => scrollToSection("services")}
-              className="btn-secondary group w-full flex items-center justify-center"
+              className="btn-secondary group w-full flex items-center justify-center transform hover:scale-105 transition-all duration-300"
             >
               <span>Découvrir nos services</span>
               <Code size={20} className="ml-2 transition-transform group-hover:rotate-12" />
@@ -82,17 +82,17 @@ const HeroSection = ({ scrollToSection }) => {
           </div>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 animate-fadeInUp delay-800">
-            <div className="flex items-center justify-center gap-3 text-gray-300">
-              <Globe size={20} className="text-purple-400" />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 animate-slideInUp delay-900">
+            <div className="flex items-center justify-center gap-3 text-gray-300 transform hover:text-purple-300 transition-all duration-300">
+              <Globe size={20} className="text-purple-400 animate-spin-slow" />
               <span className="body-small">Sites responsives</span>
             </div>
-            <div className="flex items-center justify-center gap-3 text-gray-300">
-              <Zap size={20} className="text-purple-400" />
+            <div className="flex items-center justify-center gap-3 text-gray-300 transform hover:text-purple-300 transition-all duration-300">
+              <Zap size={20} className="text-purple-400 animate-pulse" />
               <span className="body-small">Performance optimisée</span>
             </div>
-            <div className="flex items-center justify-center gap-3 text-gray-300">
-              <Code size={20} className="text-purple-400" />
+            <div className="flex items-center justify-center gap-3 text-gray-300 transform hover:text-purple-300 transition-all duration-300">
+              <Code size={20} className="text-purple-400 animate-bounce-subtle" />
               <span className="body-small">Technologies modernes</span>
             </div>
           </div>
