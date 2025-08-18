@@ -29,9 +29,9 @@ const HeroSection = ({ scrollToSection }) => {
       </div>
 
       <div className="dark-content-container relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto px-4">
           {/* Main heading */}
-          <h1 className="display-huge mb-8 animate-fadeInUp">
+          <h1 className="display-huge mb-8 mt-8 md:mt-0 animate-slideInUp">
             {companyInfo.slogan}
           </h1>
           
