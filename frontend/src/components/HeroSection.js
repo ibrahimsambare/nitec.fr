@@ -107,10 +107,10 @@ const HeroSection = ({ scrollToSection }) => {
       </div>
 
       <style jsx>{`
-        @keyframes fadeInUp {
+        @keyframes slideInUp {
           from {
             opacity: 0;
-            transform: translateY(30px);
+            transform: translateY(50px);
           }
           to {
             opacity: 1;
@@ -118,32 +118,114 @@ const HeroSection = ({ scrollToSection }) => {
           }
         }
         
-        .animate-fadeInUp {
-          animation: fadeInUp 0.8s ease-out forwards;
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+        
+        @keyframes counter {
+          from {
+            opacity: 0;
+            transform: scale(0.5);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        @keyframes spin-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        
+        @keyframes bounce-subtle {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+        
+        @keyframes pulse-slow {
+          0%, 100% {
+            opacity: 0.05;
+          }
+          50% {
+            opacity: 0.1;
+          }
+        }
+        
+        .animate-slideInUp {
+          animation: slideInUp 0.8s ease-out forwards;
+        }
+        
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-float-delay-1 {
+          animation: float 3s ease-in-out infinite;
+          animation-delay: 0.5s;
+        }
+        
+        .animate-float-delay-2 {
+          animation: float 3s ease-in-out infinite;
+          animation-delay: 1s;
+        }
+        
+        .animate-float-delay-3 {
+          animation: float 3s ease-in-out infinite;
+          animation-delay: 1.5s;
+        }
+        
+        .animate-counter {
+          animation: counter 1s ease-out forwards;
+        }
+        
+        .animate-spin-slow {
+          animation: spin-slow 8s linear infinite;
+        }
+        
+        .animate-bounce-subtle {
+          animation: bounce-subtle 2s ease-in-out infinite;
+        }
+        
+        .animate-pulse-slow {
+          animation: pulse-slow 4s ease-in-out infinite;
+        }
+        
+        .delay-100 {
+          animation-delay: 0.1s;
         }
         
         .delay-200 {
           animation-delay: 0.2s;
         }
         
-        .delay-400 {
-          animation-delay: 0.4s;
-        }
-        
-        .delay-600 {
-          animation-delay: 0.6s;
-        }
-        
-        .delay-800 {
-          animation-delay: 0.8s;
-        }
-        
-        .delay-1000 {
-          animation-delay: 1s;
+        .delay-300 {
+          animation-delay: 0.3s;
         }
         
         .delay-500 {
           animation-delay: 0.5s;
+        }
+        
+        .delay-700 {
+          animation-delay: 0.7s;
+        }
+        
+        .delay-900 {
+          animation-delay: 0.9s;
         }
       `}</style>
     </div>
