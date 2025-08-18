@@ -247,7 +247,7 @@ body {
   background: var(--bg-primary);
   position: relative;
   min-height: 100vh;
-  padding: 80px 7.6923% 0;
+  padding: 90px 7.6923% 0;
 }
 
 .dark-full-container {
