@@ -71,7 +71,7 @@ const Header = ({ activeSection, scrollToSection }) => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-95 z-50 md:hidden">
-          <div className="flex flex-col items-center justify-center h-full space-y-8">
+          <div className="flex flex-col items-center justify-center h-full space-y-8 px-6">
             <button
               className="absolute top-6 right-6 p-2 text-white hover:text-purple-400"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -83,15 +83,27 @@ const Header = ({ activeSection, scrollToSection }) => {
               <button
                 key={item.id}
                 onClick={() => handleMenuClick(item.id)}
-                className={`text-2xl font-medium transition-colors ${
+                className={`text-xl font-medium transition-colors w-full text-center py-3 ${
                   activeSection === item.id 
-                    ? 'text-purple-400' 
+                    ? 'text-purple-400 bg-purple-900 bg-opacity-30' 
                     : 'text-white hover:text-purple-400'
                 }`}
               >
                 {item.label}
               </button>
             ))}
+            
+            {/* Mobile CTA */}
+            <div className="mt-8 w-full px-4">
+              <button
+                onClick={() => {
+                  handleMenuClick('contact');
+                }}
+                className="btn-primary w-full"
+              >
+                Demander un devis
+              </button>
+            </div>
           </div>
         </div>
       )}
