@@ -3,6 +3,7 @@ import Header from "./Header";
 import HeroSection from "./HeroSection";
 import ServicesSection from "./ServicesSection";
 import PortfolioSection from "./PortfolioSection";
+import FAQSection from "./FAQSection";
 import ContactSection from "./ContactSection";
 import Footer from "./Footer";
 
