@@ -127,10 +127,11 @@ const ServicesSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <div className="bg-gray-900 bg-opacity-30 border border-gray-800 p-8 rounded-none max-w-2xl mx-auto">
-            <h3 className="heading-2 mb-4">Besoin d'une solution personnalisée ?</h3>
+            <h3 className="heading-1 mb-4">Votre vision, notre expertise</h3>
             <p className="body-medium mb-6">
-              Chaque projet est unique. Contactez-nous pour discuter de vos besoins spécifiques 
-              et obtenir un devis sur mesure.
+              <strong>Chaque projet raconte une histoire unique.</strong> Que vous soyez une startup 
+              ambitieuse à Niamey, une école innovante à Dakar, ou une entreprise en croissance à Paris, 
+              nous créons des solutions web qui révèlent votre potentiel et connectent vos audiences.
             </p>
             <button 
               onClick={() => {
@@ -141,7 +142,7 @@ const ServicesSection = () => {
               }}
               className="btn-primary"
             >
-              Discuter de votre projet
+              Transformons vos idées en réalité digitale
               <ArrowRight size={20} />
             </button>
           </div>
