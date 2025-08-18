@@ -70,11 +70,11 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-8">
           {services.map((service, index) => (
             <div 
               key={service.id}
-              className="group bg-gray-900 bg-opacity-50 border border-gray-800 p-8 transition-all duration-500 hover:border-purple-500 hover:bg-opacity-70 dark-hover"
+              className="group bg-gray-900 bg-opacity-50 border border-gray-800 p-6 lg:p-8 transition-all duration-500 hover:border-purple-500 hover:bg-opacity-70 dark-hover"
               style={{
                 animationDelay: `${index * 0.1}s`
               }}
@@ -91,7 +91,7 @@ const ServicesSection = () => {
               <p className="body-medium mb-6">{service.description}</p>
 
               {/* Features List */}
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3 mb-8">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center gap-3">
                     <Check size={16} className="text-purple-400 flex-shrink-0" />
@@ -115,8 +115,8 @@ const ServicesSection = () => {
                   <span>Envoi en cours...</span>
                 ) : (
                   <>
-                    Demander un devis
-                    <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                    <span>Demander un devis</span>
+                    <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
                   </>
                 )}
               </button>
