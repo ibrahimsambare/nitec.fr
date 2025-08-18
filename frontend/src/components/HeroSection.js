@@ -43,7 +43,7 @@ const HeroSection = ({ scrollToSection }) => {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-8 mb-16 animate-slideInUp delay-500">
+          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-8 mb-20 mt-12 animate-slideInUp delay-500">
             <div className="text-center p-4 transform hover:scale-105 transition-transform duration-300">
               <div className="display-medium text-purple-400 mb-2 animate-counter">{companyInfo.stats.projects}</div>
               <div className="body-small">Projets réalisés</div>
@@ -63,7 +63,7 @@ const HeroSection = ({ scrollToSection }) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col gap-6 justify-center items-center animate-slideInUp delay-700 max-w-md mx-auto">
+          <div className="flex flex-col gap-8 justify-center items-center animate-slideInUp delay-700 max-w-md mx-auto mb-16 mt-8">
             <button 
               onClick={handleCTAClick}
               className="btn-primary group w-full flex items-center justify-center transform hover:scale-105 transition-all duration-300"
@@ -82,7 +82,7 @@ const HeroSection = ({ scrollToSection }) => {
           </div>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 animate-slideInUp delay-900">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-20 mb-12 animate-slideInUp delay-900">
             <div className="flex items-center justify-center gap-3 text-gray-300 transform hover:text-purple-300 transition-all duration-300">
               <Globe size={20} className="text-purple-400 animate-spin-slow" />
               <span className="body-small">Sites responsives</span>
