@@ -25,7 +25,9 @@ const HeroSection = ({ scrollToSection }) => {
           
           {/* Subtitle */}
           <p className="body-large mb-12 max-w-2xl mx-auto animate-fadeInUp delay-200">
-            Créez une présence digitale professionnelle pour votre entreprise, école ou institution au Niger et en France avec des solutions web modernes et sur mesure.
+            <strong>L'Afrique mérite des solutions web d'exception.</strong> Créez une présence digitale 
+            puissante pour votre entreprise, école ou institution avec nos solutions modernes, 
+            performantes et parfaitement adaptées au marché africain et international.
           </p>
 
           {/* Stats */}
