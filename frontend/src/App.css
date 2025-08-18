@@ -292,11 +292,12 @@ body {
   box-shadow: 0 8px 32px rgba(162, 89, 255, 0.2);
 }
 
-/* Mobile Responsive - Enhanced */
+/* Mobile Responsive - Enhanced with strict spacing */
 @media (max-width: 767px) {
   .dark-header {
     padding: 12px 20px;
     height: 80px;
+    z-index: 1000;
   }
   
   .dark-logo {
@@ -311,69 +312,75 @@ body {
     padding: 80px 20px 0;
   }
   
-  /* Hero section mobile spacing */
+  /* CRITICAL: Hero section mobile spacing */
   .min-h-screen {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  
-  /* Mobile Typography */
-  .display-huge { 
-    font-size: 28px; 
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-  }
-  
-  .display-large { 
-    font-size: 24px; 
-    line-height: 1.2;
-    margin-bottom: 1.25rem;
-  }
-  
-  .display-medium { 
-    font-size: 20px; 
-    line-height: 1.25;
-    margin-bottom: 1rem;
-  }
-  
-  .heading-1 { 
-    font-size: 22px; 
-    line-height: 1.3;
-    margin-bottom: 1rem;
-  }
-  
-  .heading-2 { 
-    font-size: 18px; 
-    line-height: 1.3;
-    margin-bottom: 0.75rem;
-  }
-  
-  .heading-3 { 
-    font-size: 16px; 
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-  }
-  
-  .body-large {
-    font-size: 16px;
-    line-height: 1.6;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
     margin-bottom: 2rem;
   }
   
-  .body-medium {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+  /* Mobile Typography with forced margins */
+  .display-huge { 
+    font-size: 28px !important; 
+    line-height: 1.2 !important;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem !important;
+    margin-top: 3rem !important;
+    padding: 0 1rem;
   }
   
-  /* Mobile buttons */
+  .display-large { 
+    font-size: 24px !important; 
+    line-height: 1.2 !important;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+  }
+  
+  .display-medium { 
+    font-size: 20px !important; 
+    line-height: 1.25 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .heading-1 { 
+    font-size: 22px !important; 
+    line-height: 1.3 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .heading-2 { 
+    font-size: 18px !important; 
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .heading-3 { 
+    font-size: 16px !important; 
+    line-height: 1.4 !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .body-large {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 2.5rem !important;
+    padding: 0 0.5rem;
+  }
+  
+  .body-medium {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Mobile buttons with strict spacing */
   .btn-primary {
     padding: 16px 24px;
     font-size: 16px;
     min-height: 56px;
     width: 100%;
+    margin: 0.75rem 0;
   }
   
   .btn-secondary {
@@ -381,46 +388,86 @@ body {
     font-size: 16px;
     min-height: 56px;
     width: 100%;
+    margin: 0.75rem 0;
   }
   
-  /* Mobile spacing - More generous */
+  /* CRITICAL: Section spacing */
   .pad-xlarge { 
-    padding: 80px 0; 
+    padding: 100px 0 !important; 
   }
   
   .pad-large { 
-    padding: 60px 0; 
+    padding: 80px 0 !important; 
+  }
+  
+  /* CRITICAL: Force section separation */
+  section {
+    margin-bottom: 4rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  /* Hero specific spacing */
+  section#accueil {
+    margin-bottom: 6rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Services specific spacing */
+  section#services {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+    padding-top: 3rem !important;
+  }
+  
+  /* Portfolio specific spacing */
+  section#realisations {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+    padding-top: 3rem !important;
+  }
+  
+  /* FAQ specific spacing */
+  section#faq {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+    padding-top: 3rem !important;
+  }
+  
+  /* Contact specific spacing */
+  section#contact {
+    margin-top: 4rem !important;
+    padding-top: 3rem !important;
   }
   
   /* Mobile grid improvements */
   .grid {
-    gap: 2rem;
+    gap: 2rem !important;
+    margin: 2rem 0 !important;
   }
   
-  /* Better mobile card spacing */
-  .space-y-8 > * + * {
-    margin-top: 3rem;
+  /* Stats grid specific */
+  .grid-cols-2:not(.md\\:flex) {
+    gap: 2rem !important;
+    margin: 3rem 0 !important;
   }
   
-  .space-y-6 > * + * {
-    margin-top: 2.5rem;
-  }
-  
-  /* Mobile section spacing */
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  /* Mobile stats grid */
-  .grid-cols-2 {
-    gap: 1.5rem;
-  }
-  
-  /* Mobile CTA spacing */
+  /* CTA buttons container */
   .flex.flex-col.gap-6 {
-    gap: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    gap: 2rem !important;
+    margin: 3rem 0 !important;
+    padding: 1rem 0;
+  }
+  
+  /* Feature highlights spacing */
+  .grid.grid-cols-1.sm\\:grid-cols-3 {
+    margin-top: 3rem !important;
+    gap: 2rem !important;
+  }
+  
+  /* Dark content container mobile */
+  .dark-content-container {
+    padding: 0 1rem;
   }
 }
 
