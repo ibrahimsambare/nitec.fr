@@ -31,7 +31,7 @@ const HeroSection = ({ scrollToSection }) => {
           </p>
 
           {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fadeInUp delay-400">
+          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-6 md:gap-8 mb-12 animate-fadeInUp delay-400">
             <div className="text-center">
               <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.projects}</div>
               <div className="body-small">Projets réalisés</div>
@@ -51,10 +51,10 @@ const HeroSection = ({ scrollToSection }) => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fadeInUp delay-600">
+          <div className="flex flex-col gap-4 justify-center items-center animate-fadeInUp delay-600">
             <button 
               onClick={handleCTAClick}
-              className="btn-primary group"
+              className="btn-primary group w-full sm:w-auto"
             >
               Demander un devis gratuit
               <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
@@ -62,7 +62,7 @@ const HeroSection = ({ scrollToSection }) => {
             
             <button 
               onClick={() => scrollToSection("services")}
-              className="btn-secondary group"
+              className="btn-secondary group w-full sm:w-auto"
             >
               Découvrir nos services
               <Code size={20} className="transition-transform group-hover:rotate-12" />
@@ -70,16 +70,16 @@ const HeroSection = ({ scrollToSection }) => {
           </div>
 
           {/* Feature highlights */}
-          <div className="flex flex-wrap justify-center gap-8 mt-16 animate-fadeInUp delay-800">
-            <div className="flex items-center gap-3 text-gray-300">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 animate-fadeInUp delay-800">
+            <div className="flex items-center justify-center gap-3 text-gray-300">
               <Globe size={20} className="text-purple-400" />
               <span className="body-small">Sites responsives</span>
             </div>
-            <div className="flex items-center gap-3 text-gray-300">
+            <div className="flex items-center justify-center gap-3 text-gray-300">
               <Zap size={20} className="text-purple-400" />
               <span className="body-small">Performance optimisée</span>
             </div>
-            <div className="flex items-center gap-3 text-gray-300">
+            <div className="flex items-center justify-center gap-3 text-gray-300">
               <Code size={20} className="text-purple-400" />
               <span className="body-small">Technologies modernes</span>
             </div>
