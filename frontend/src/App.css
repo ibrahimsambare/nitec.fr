@@ -209,7 +209,7 @@ body {
 }
 
 .dark-logo {
-  height: 60px;
+  height: 80px;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -217,6 +217,13 @@ body {
 
 .dark-logo:hover {
   transform: scale(1.05);
+}
+
+/* Mobile logo size */
+@media (max-width: 767px) {
+  .dark-logo {
+    height: 60px;
+  }
 }
 
 .dark-nav {
