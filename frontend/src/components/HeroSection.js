@@ -43,41 +43,41 @@ const HeroSection = ({ scrollToSection }) => {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-6 md:gap-8 mb-12 animate-fadeInUp delay-400">
-            <div className="text-center">
+          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-8 mb-16 animate-fadeInUp delay-400">
+            <div className="text-center p-4">
               <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.projects}</div>
               <div className="body-small">Projets réalisés</div>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4">
               <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.clients}</div>
               <div className="body-small">Clients satisfaits</div>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4">
               <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.experience}</div>
               <div className="body-small">Années d'expérience</div>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4">
               <div className="display-medium text-purple-400 mb-2">{companyInfo.stats.satisfaction}</div>
               <div className="body-small">Satisfaction client</div>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col gap-4 justify-center items-center animate-fadeInUp delay-600">
+          <div className="flex flex-col gap-6 justify-center items-center animate-fadeInUp delay-600 max-w-md mx-auto">
             <button 
               onClick={handleCTAClick}
-              className="btn-primary group w-full sm:w-auto"
+              className="btn-primary group w-full flex items-center justify-center"
             >
-              Demander un devis gratuit
-              <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
+              <span>Demander un devis gratuit</span>
+              <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
             </button>
             
             <button 
               onClick={() => scrollToSection("services")}
-              className="btn-secondary group w-full sm:w-auto"
+              className="btn-secondary group w-full flex items-center justify-center"
             >
-              Découvrir nos services
-              <Code size={20} className="transition-transform group-hover:rotate-12" />
+              <span>Découvrir nos services</span>
+              <Code size={20} className="ml-2 transition-transform group-hover:rotate-12" />
             </button>
           </div>
 
