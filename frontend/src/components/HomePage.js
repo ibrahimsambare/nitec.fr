@@ -35,6 +35,10 @@ const HomePage = () => {
           <PortfolioSection />
         </section>
         
+        <section id="faq">
+          <FAQSection />
+        </section>
+        
         <section id="contact">
           <ContactSection />
         </section>
