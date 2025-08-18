@@ -60,9 +60,13 @@ const ServicesSection = () => {
         <div className="text-center mb-16">
           <h2 className="display-large mb-6">Nos Services</h2>
           <p className="body-large max-w-3xl mx-auto">
-            Nous offrons une gamme complète de services web adaptés aux besoins spécifiques 
-            des entreprises, écoles et institutions au Niger et en France.
+            <strong>Propulsez votre entreprise vers l'avenir digital</strong> avec nos solutions web 
+            sur mesure. De Niamey à Paris, nous accompagnons les entrepreneurs, écoles et institutions 
+            dans leur transformation numérique avec passion et expertise.
           </p>
+          <div className="mt-6 text-purple-400 body-medium font-semibold">
+            🌍 Spécialistes du web en Afrique • Solutions modernes • Support dédié
+          </div>
         </div>
 
         {/* Services Grid */}
