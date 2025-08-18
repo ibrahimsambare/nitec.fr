@@ -4,40 +4,40 @@ export const services = [
   {
     id: 1,
     title: "Sites Vitrines",
-    description: "Créez une présence digitale professionnelle pour votre entreprise avec un site vitrine moderne et responsive.",
-    features: ["Design responsive", "Optimisation SEO", "Hébergement inclus", "Maintenance 6 mois"],
+    description: "Révélez l'essence de votre marque avec un site vitrine moderne qui raconte votre histoire et connecte avec vos clients africains et internationaux.",
+    features: ["Design responsive", "Optimisation SEO", "Hébergement premium", "Maintenance 6 mois"],
     price: "À partir de 299€",
     icon: "globe"
   },
   {
     id: 2,
     title: "Sites E-commerce",
-    description: "Développez votre activité en ligne avec une boutique e-commerce simple et efficace.",
-    features: ["Catalogue produits", "Paiement sécurisé", "Gestion des commandes", "Formation incluse"],
+    description: "Libérez le potentiel commercial de l'Afrique avec une boutique en ligne puissante, sécurisée et adaptée aux paiements mobiles locaux.",
+    features: ["Paiement mobile Money", "Catalogue multi-langues", "Gestion avancée", "Formation complète"],
     price: "À partir de 599€",
     icon: "shopping-cart"
   },
   {
     id: 3,
     title: "Sites Éducatifs",
-    description: "Solutions web spécialisées pour les écoles, universités et centres de formation.",
-    features: ["Portail étudiant", "Gestion des cours", "Espace parents", "Support technique"],
+    description: "Transformez l'éducation africaine avec des plateformes web innovantes qui rapprochent enseignants, étudiants et parents dans un écosystème digital moderne.",
+    features: ["Portail interactif", "Gestion pédagogique", "Communication parents", "Support technique 24/7"],
     price: "À partir de 399€",
     icon: "graduation-cap"
   },
   {
     id: 4,
     title: "Domaine & Email Pro",
-    description: "Sécurisez votre identité numérique avec un nom de domaine et des emails professionnels.",
-    features: ["Nom de domaine .com/.fr", "Emails professionnels", "Certificat SSL", "Support 24/7"],
+    description: "Établissez votre crédibilité professionnelle avec un nom de domaine mémorable et des emails qui renforcent votre identité de marque.",
+    features: ["Domaine .com/.africa/.fr", "Emails illimités", "Certificat SSL premium", "Support expert"],
     price: "À partir de 99€/an",
     icon: "mail"
   },
   {
     id: 5,
-    title: "Maintenance & Support",
-    description: "Gardez votre site à jour et sécurisé avec notre service de maintenance continue.",
-    features: ["Mises à jour sécurité", "Sauvegardes automatiques", "Support technique", "Monitoring 24/7"],
+    title: "Maintenance & Évolution",
+    description: "Votre site web grandit avec votre business. Notre maintenance proactive assure performance, sécurité et évolutions continues.",
+    features: ["Sécurité renforcée", "Sauvegardes quotidiennes", "Support prioritaire", "Mises à jour gratuites"],
     price: "À partir de 49€/mois",
     icon: "settings"
   }
