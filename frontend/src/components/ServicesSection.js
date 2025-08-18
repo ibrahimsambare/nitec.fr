@@ -74,49 +74,60 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={service.id}
-              className="group bg-gray-900 bg-opacity-50 border border-gray-800 p-6 lg:p-8 transition-all duration-500 hover:border-purple-500 hover:bg-opacity-70 dark-hover"
+              className={`service-card hover-lift animate-fade-in-up animate-delay-${(index + 1) * 100} group`}
               style={{
                 animationDelay: `${index * 0.1}s`
               }}
             >
               {/* Service Icon */}
-              <div className="mb-6">
-                {getIcon(service.icon)}
+              <div className="mb-6 transform group-hover:scale-110 transition-all duration-300">
+                <div className="p-4 bg-purple-900 bg-opacity-20 inline-block rounded-lg border border-purple-800 hover-glow">
+                  {getIcon(service.icon)}
+                </div>
               </div>
 
               {/* Service Title */}
-              <h3 className="heading-2 mb-4">{service.title}</h3>
+              <h3 className="heading-2 mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                {service.title}
+              </h3>
 
               {/* Service Description */}
-              <p className="body-medium mb-6">{service.description}</p>
+              <p className="body-medium mb-6 group-hover:text-gray-200 transition-colors duration-300">
+                {service.description}
+              </p>
 
               {/* Features List */}
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-3">
-                    <Check size={16} className="text-purple-400 flex-shrink-0" />
-                    <span className="body-small">{feature}</span>
+                  <li key={idx} className="flex items-center gap-3 group/item hover:text-purple-300 transition-colors duration-300">
+                    <div className="p-1 rounded-full bg-purple-900 bg-opacity-30 group-hover/item:bg-purple-600 group-hover/item:scale-110 transition-all duration-300">
+                      <Check size={12} className="text-purple-400 group-hover/item:text-white" />
+                    </div>
+                    <span className="body-small group-hover/item:font-medium">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               {/* Price */}
               <div className="mb-6">
-                <span className="heading-3 text-purple-400">{service.price}</span>
+                <span className="heading-3 text-purple-400 animate-glow">{service.price}</span>
               </div>
 
               {/* CTA Button */}
               <button
                 onClick={() => handleQuoteRequest(service)}
                 disabled={loadingService === service.id}
-                className="btn-secondary w-full group"
+                className="btn-secondary w-full group/button"
               >
                 {loadingService === service.id ? (
-                  <span>Envoi en cours...</span>
+                  <div className="flex items-center gap-2">
+                    <div className="w-4 h-4 border-2 border-purple-400 border-t-transparent rounded-full animate-spin"></div>
+                    <span>Envoi en cours...</span>
+                  </div>
                 ) : (
                   <>
                     <span>Demander un devis</span>
-                    <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight size={16} className="ml-2 transition-transform group-hover/button:translate-x-1 group-hover/button:scale-110" />
                   </>
                 )}
               </button>
