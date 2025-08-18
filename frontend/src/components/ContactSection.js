@@ -83,10 +83,10 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Form */}
           <div className="order-2 lg:order-1">
-            <div className="bg-gray-900 bg-opacity-30 border border-gray-800 p-8">
+            <div className="bg-gray-900 bg-opacity-30 border border-gray-800 p-6 lg:p-8">
               <h3 className="heading-2 mb-6">Envoyez-nous un message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
