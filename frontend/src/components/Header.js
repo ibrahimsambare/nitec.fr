@@ -37,7 +37,7 @@ const Header = ({ activeSection, scrollToSection }) => {
             onClick={() => scrollToSection("accueil")}
           >
             <img 
-              src="/public/favicon.png" 
+              src="/favicon.png" 
               alt="NITEC Logo" 
               className="dark-logo"
             />
