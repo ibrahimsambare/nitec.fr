@@ -37,7 +37,7 @@ const Header = ({ activeSection, scrollToSection }) => {
             onClick={() => scrollToSection("accueil")}
           >
             <img 
-              src="https://customer-assets.emergentagent.com/job_nitec-web/artifacts/a29co52z_NITEC%20Logo.svg" 
+              src="/public/favicon.png" 
               alt="NITEC Logo" 
               className="dark-logo"
             />
