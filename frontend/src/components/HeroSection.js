@@ -28,10 +28,10 @@ const HeroSection = ({ scrollToSection }) => {
         </svg>
       </div>
 
-      <div className="dark-content-container relative z-10">
+      <div className="dark-content-container relative z-10 overflow-visible">
         <div className="text-center max-w-4xl mx-auto px-4 py-8 md:py-0">
           {/* Main heading */}
-          <h1 className="display-huge mb-8 mt-8 md:mt-0 animate-slideInUp px-4">
+          <h1 className="display-huge leading-relaxed mb-8 mt-8 md:mt-0 animate-slideInUp px-4">
             {companyInfo.slogan}
           </h1>
           
