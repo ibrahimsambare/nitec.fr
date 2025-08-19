@@ -38,7 +38,7 @@ jobs:
         working-directory: frontend
         run: yarn build
 
-     - name: Add CNAME & 404
+      - name: Add CNAME & 404
         run: |
           echo "www.nitec.fr" > frontend/build/CNAME
           cp frontend/build/index.html frontend/build/404.html
