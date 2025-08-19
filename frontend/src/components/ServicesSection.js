@@ -65,7 +65,7 @@ const ServicesSection = () => {
             dans leur transformation numérique avec passion et expertise.
           </p>
           <div className="mt-6 text-purple-400 body-medium font-semibold">
-            🌍 Spécialistes du web en Afrique • Solutions modernes • Support dédié
+            Spécialistes du web en Afrique • Solutions modernes • Support dédié
           </div>
         </div>
 
