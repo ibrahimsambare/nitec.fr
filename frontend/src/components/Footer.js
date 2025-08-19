@@ -176,7 +176,7 @@ const Footer = () => {
         {/* Attribution */}
         <div className="border-t border-gray-900 py-4">
           <p className="text-center body-muted text-xs">
-            Site web créé avec ❤️ au Niger • Technologie moderne • Performance optimisée
+            Site web créé avec coeur au Niger • Technologie moderne • Performance optimisée
           </p>
         </div>
       </div>
