@@ -115,9 +115,10 @@ const ServicesSection = () => {
 
               {/* CTA Button */}
               <button
-                onClick={() => handleQuoteRequest(service)}
-                disabled={loadingService === service.id}
-                className="btn-secondary w-full group/button"
+                onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
               >
                 {loadingService === service.id ? (
                   <div className="flex items-center gap-2">
